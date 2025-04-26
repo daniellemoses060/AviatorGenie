@@ -17,5 +17,5 @@ RUN pip install --no-cache-dir -r /app/requirements.txt
 WORKDIR /app
 COPY . /app
 
-# Run the bot (make sure to reference bot.py here)
-CMD ["python", "bot.py"]
+# Ensure to run bot.py and not main.py
+CMD ["python3", "bot.py"]
